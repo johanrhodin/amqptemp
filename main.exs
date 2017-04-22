@@ -1,0 +1,7 @@
+{:ok, connection} = AMQP.Connection.open(System.get_env("CLOUDAMQP_URL"))
+{:ok, channel} = AMQP.Channel.open(connection)
+temp = :rand.uniform()
+AMQP.Queue.declare(channel, "temperaturePub")
+AMQP.Basic.publish(channel, "", "temperaturePub", to_string(temp))
+IO.puts " [x] Sent "<> to_string(temp)
+AMQP.Connection.close(connection)
