@@ -1,25 +1,5 @@
 # Amqptemp
 
-**TODO: Add description**
+This project needs the `AMQP` elixir library and an environment variable: `CLOUDAMQP_URL` 
 
-## Installation
-
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
-
-  1. Add `amqptemp` to your list of dependencies in `mix.exs`:
-
-    ```elixir
-    def deps do
-      [{:amqptemp, "~> 0.1.0"}]
-    end
-    ```
-
-  2. Ensure `amqptemp` is started before your application:
-
-    ```elixir
-    def application do
-      [applications: [:amqptemp]]
-    end
-    ```
-
-# amqptemp
+To run: `mix run main.exs`
