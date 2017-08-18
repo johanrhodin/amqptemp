@@ -28,7 +28,7 @@ defmodule Amqptemp.Mixfile do
   # Type "mix help deps" for more examples and options
   defp deps do
     [
-      {:amqp, "~> 0.2.1"},
+      {:amqp, "~> 0.2.0-pre.1"},
     ]
   end
 end
