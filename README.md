@@ -5,3 +5,4 @@ This project needs the `AMQP` elixir library and an environment variable: `CLOUD
 To run: `mix run main.exs`
 
 You can also set it up as a cronjob with `crontab -e`
+Should rewrite as a loop instead
